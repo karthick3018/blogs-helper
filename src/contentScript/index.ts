@@ -30,7 +30,7 @@ iframe.style.height = "100%";
 iframe.style.width = "0px";
 iframe.style.position = "fixed";
 iframe.style.top = "70px";
-iframe.style.right = "10px";
+iframe.style.right = "1px";
 iframe.style.border = "none";
 iframe.frameBorder = "none"; 
 iframe.src = chrome.extension.getURL("popup.html")
@@ -39,7 +39,7 @@ document.body.appendChild(iframe);
 
 function toggle(){
     if(iframe.style.width === "0px"){
-        iframe.style.width="400px";
+        iframe.style.width="350px";
     }
     else{
         iframe.style.width="0px";

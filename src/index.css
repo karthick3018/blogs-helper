@@ -17,9 +17,30 @@ code {
   box-sizing: border-box;
 }
 
-.App {
-  border: 1px solid rgb(129, 53, 53);
-  padding: 5px;
+.icon-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+
+.red{
+  background-color: #FD5F56;
+}
+
+.yellow{
+  background-color: #FEBD2E;
+}
+
+.green{
+  background-color: #27C93F;
 }
 
 .editable-div{
@@ -33,7 +54,13 @@ code {
 
 .react-resizable {
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
+   border: 1px solid rgb(129, 53, 53);
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #151718;
+  color: #ffffff;
+  font-size: 16px;
 }
 .react-resizable-handle {
   position: absolute;
@@ -45,6 +72,8 @@ code {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+');
   background-position: bottom right;
   padding: 0 3px 3px 0;
+  background-color: #ffffff;
+  font-size: 18px;
 }
 .react-resizable-handle-sw {
   bottom: 0;

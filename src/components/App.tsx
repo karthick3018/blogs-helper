@@ -16,23 +16,28 @@ function App() {
     });
 
     return () => {
-      document.removeEventListener("paste", ()=>{});
-    }
+      document.removeEventListener("paste", () => {});
+    };
   }, []);
   return (
-    <div className="App">
-      <ResizableBox
-        width={200}
-        height={200}
-        minConstraints={[100, 100]}
-        maxConstraints={[300, 300]}
-      >
-        <div className="editable-div" id="kr-edit" contentEditable>
-          {" "}
-          Karthick Blog extension
+    <ResizableBox
+      width={300}
+      height={200}
+      minConstraints={[100, 100]}
+      maxConstraints={[340, 700]}
+    >
+      <>
+        <div className="icon-wrapper">
+          <div className="icon red"></div>
+          <div className="icon yellow"></div>
+          <div className="icon green"></div>
         </div>
-      </ResizableBox>
-    </div>
+
+        <div className="editable-div" id="kr-edit" placeholder="...." contentEditable>
+          {" "}
+        </div>
+      </>
+    </ResizableBox>
   );
 }
 
