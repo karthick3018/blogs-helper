@@ -4,12 +4,10 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "description": "Sample application showing how to create an extension with Create React App",
-  "browser_action": {
-    "default_title": "CRE",
-    "default_popup": "popup.html"
-  },
+  "browser_action": {},
+  "web_accessible_resources": ["popup.html"],
   "background": {
-    "scripts": ["background.bundle.js"]
+     "scripts": ["background.bundle.js"]
   },
   "content_scripts": [
     {
@@ -23,6 +21,6 @@
     "128": "img/icon-128.png"
   },
   "options_page": "options.html",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab","storage"],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
