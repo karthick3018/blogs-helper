@@ -32,7 +32,7 @@ iframe.style.position = "fixed";
 iframe.style.top = "70px";
 iframe.style.right = "1px";
 iframe.style.border = "none";
-iframe.frameBorder = "none"; 
+iframe.style.zIndex = "99";
 iframe.src = chrome.extension.getURL("popup.html")
 
 document.body.appendChild(iframe);

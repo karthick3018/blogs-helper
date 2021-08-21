@@ -51,6 +51,9 @@ code {
 .editable-div:focus{
   outline: none;
 }
+.draggable-wrapper:hover{
+ cursor: grab;
+}
 
 .react-resizable {
   position: relative;
@@ -74,6 +77,7 @@ code {
   padding: 0 3px 3px 0;
   background-color: #ffffff;
   font-size: 18px;
+  z-index: 999;
 }
 .react-resizable-handle-sw {
   bottom: 0;

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { ResizableBox } from "react-resizable";
+import Draggable from "react-draggable";
 
 function App() {
   useEffect(() => {
@@ -19,25 +20,30 @@ function App() {
       document.removeEventListener("paste", () => {});
     };
   }, []);
+
   return (
-    <ResizableBox
-      width={300}
-      height={200}
-      minConstraints={[100, 100]}
-      maxConstraints={[340, 700]}
-    >
-      <>
-        <div className="icon-wrapper">
-          <div className="icon red"></div>
-          <div className="icon yellow"></div>
-          <div className="icon green"></div>
+    <Draggable handle=".draggable-wrapper">
+      <ResizableBox
+        width={300}
+        height={200}
+        minConstraints={[100, 100]}
+        maxConstraints={[340, 700]}
+      >
+        <div className="draggable-wrapper">
+          <div className="icon-wrapper">
+            <div className="icon red"></div>
+            <div className="icon yellow"></div>
+            <div className="icon green"></div>
+          </div>
         </div>
 
-        <div className="editable-div" id="kr-edit" placeholder="...." contentEditable>
-          {" "}
-        </div>
-      </>
-    </ResizableBox>
+          <div
+            className="editable-div"
+            id="kr-edit"
+            contentEditable
+          />
+      </ResizableBox>
+    </Draggable>
   );
 }
 
