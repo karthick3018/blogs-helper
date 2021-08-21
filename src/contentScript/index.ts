@@ -26,14 +26,13 @@ export function printAllPageLinks() {
 })
 
 var iframe = document.createElement('iframe'); 
-// iframe.style.background = "green";
 iframe.style.height = "100%";
 iframe.style.width = "0px";
 iframe.style.position = "fixed";
 iframe.style.top = "70px";
 iframe.style.right = "10px";
-// iframe.style.zIndex = "9000000000000000000";
-// iframe.frameBorder = "none"; 
+iframe.style.border = "none";
+iframe.frameBorder = "none"; 
 iframe.src = chrome.extension.getURL("popup.html")
 
 document.body.appendChild(iframe);

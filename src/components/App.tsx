@@ -1,23 +1,37 @@
-import React,{useEffect} from 'react';
+import { useEffect } from "react";
+import { ResizableBox } from "react-resizable";
 
 function App() {
-  let color = "#3aa757";
   useEffect(() => {
-    chrome.browserAction.onClicked.addListener(()=>{
-      console.log("chrasdfsdome",chrome);
+    document.addEventListener("paste", function (e: ClipboardEvent) {
+      e.preventDefault();
+
+      let pastedText = "";
+
+      if (e?.clipboardData?.getData) {
+        pastedText = e.clipboardData.getData("text/html");
+      }
+      let editableDiv = document.getElementById("kr-edit") as HTMLDivElement;
+      editableDiv.innerHTML = `${editableDiv?.innerHTML} ${pastedText}`;
+    });
+
+    return () => {
+      document.removeEventListener("paste", ()=>{});
     }
-    );
-     chrome.runtime.onInstalled.addListener(() => {
-       console.log(
-         "Default background color set to %cgreen",
-         `color: ${color}`
-       );
-       chrome.storage.sync.set({ color });
-     });
-  }, [])
+  }, []);
   return (
     <div className="App">
-      <h1> Karthick Blog extension</h1>
+      <ResizableBox
+        width={200}
+        height={200}
+        minConstraints={[100, 100]}
+        maxConstraints={[300, 300]}
+      >
+        <div className="editable-div" id="kr-edit" contentEditable>
+          {" "}
+          Karthick Blog extension
+        </div>
+      </ResizableBox>
     </div>
   );
 }
