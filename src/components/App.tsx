@@ -7,21 +7,15 @@ function App() {
     document.addEventListener("paste", function (e: ClipboardEvent) {
       e.preventDefault();
 
-      let pastedText:string = "";
+      let pastedText: string = "";
 
       if (e?.clipboardData?.getData) {
         pastedText = e.clipboardData.getData("text/html");
       }
       let editableDiv = document.getElementById("kr-edit") as HTMLDivElement;
       editableDiv.innerHTML = `${editableDiv?.innerHTML} ${pastedText}`;
-      // editableDiv.scrollTop = 0;
-      // editableDiv.scrollTop = editableDiv.scrollHeight;
+      editableDiv.scrollTop = editableDiv.scrollHeight;
 
-      window.scrollTo({
-        left: 10,
-        top: 20,
-        behavior: "smooth",
-      });
     });
 
     return () => {
