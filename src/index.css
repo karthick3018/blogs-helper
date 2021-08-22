@@ -17,6 +17,10 @@ code {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .icon-wrapper{
   display: flex;
   align-items: center;
@@ -57,13 +61,13 @@ code {
 
 .react-resizable {
   position: relative;
-  overflow-y: scroll;
-   border: 1px solid rgb(129, 53, 53);
+  border: 1px solid rgb(129, 53, 53);
   border-radius: 8px;
   padding: 5px;
   background-color: #151718;
   color: #ffffff;
   font-size: 16px;
+  overflow: scroll;
 }
 .react-resizable-handle {
   position: absolute;
@@ -77,7 +81,6 @@ code {
   padding: 0 3px 3px 0;
   background-color: #ffffff;
   font-size: 18px;
-  z-index: 999;
 }
 .react-resizable-handle-sw {
   bottom: 0;

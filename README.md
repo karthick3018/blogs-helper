@@ -1,46 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Blogs helper
 
-## Available Scripts
+A Chrome extension that helps you to note down the important things temporarily while reading the technical blogs and other informative things.
 
-In the project directory, you can run:
 
-### `yarn start`
+# What Blogs helper solves ? 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Problem statement I took was simple and weird , not sure how many of them faced it but to be honest I faced a lot. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```While reading the technical blogs there will be a code snipet at the starting of the blog which will be refrenced and explained till the bottom of the blogs. As we go on scrolling the page the actual code snipet which is refrenced will be hidden in the viewport.```
 
-### `yarn test`
+Now while reading the explanation I've forgot the actual code snipet. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+....What is this blog explaining 🤔 .... 
 
-### `yarn build`
+So to overcome that I've used multiple window one for the code snipet and other one is for the explanation . This is not the perfect way right ? Why not stickys ? Not sure how to use without minimizing the browser. So to overcome that I've made Blogs helper.
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React , Typescript 
+  
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* It will stick to the right side of the window . Since most of the sites have blank space at the right.
+* It can resize to a particular width & height.
+* It can be draggend and moved around the particular right side area.
+  
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Insert gif or link to demo
 
-### `yarn eject`
+  
+## Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clone the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone https://github.com/karthick3018/blogs-helper
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Go to the project directory
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  cd blogs-helper
+```
 
-## Learn More
+Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the server
+
+```bash
+  npm start
+```
+Unpack in browser
+```Unpack in browser
+Go to manage extension in chrome -> Click on Load unpacked Option and select the dev folder inside the project
+```
+
+
+  
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+  
+## Authors
+
+- [@karthick3018](https://www.github.com/karthick3018)
+
+  
+## Acknowledgements
+
+ - [React extension boiler plate](https://github.com/VasilyShelkov/create-react-extension)
+ - [Logo](https://www.flaticon.com/premium-icon/bold_1833900?term=b&page=1&position=25&page=1&position=25&related_id=1833900&origin=search)
+
+  
+![Logo](https://github.com/karthick3018/blogs-helper/blob/main/public/img/icon-128.png)
+
+    
