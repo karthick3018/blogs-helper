@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/karthick3018/blogs-helper/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Blogs helper
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+# What Blogs helper solves ? 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The Problem statement I took was simple and weird , not sure how many of them faced it but to be honest I faced a lot. 
 
-```markdown
-Syntax highlighted code block
+```While reading the technical blogs there will be a code snipet at the starting of the blog which will be referenced and explained till the bottom of the blogs. As we go on scrolling the page the actual code snipet which is referenced will be hidden in the viewport.```
 
-# Header 1
-## Header 2
-### Header 3
+Now while reading the explanation I've forgot the actual code snipet. 
 
-- Bulleted
-- List
+....What is this blog explaining 🤔 .... 
 
-1. Numbered
-2. List
+So to overcome that I've used multiple window one for the code snipet and other one is for the explanation . This is not the perfect way right ? Why not stickys ? Not sure how to use without minimizing the browser. So to overcome that I've made Blogs helper.
 
-**Bold** and _Italic_ and `Code` text
+  
+## Features
 
-[Link](url) and ![Image](src)
-```
+* It will stick to the right side of the window . Since most of the sites have blank space at the right.
+* It can resize to a particular width & height.
+* It can be dragged and moved around the particular right side area.
+  
+## Download
+You can download the extension here !
+<a href="https://github.com/karthick3018/blogs-helper/blob/main/blogs-helper.zip" target="_blank">Download</a>
+## Demo
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![gif](https://github.com/karthick3018/blogs-helper/blob/main/public/img/output.gif)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/karthick3018/blogs-helper/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+  
+## Authors
 
-### Support or Contact
+- [@karthick3018](https://www.github.com/karthick3018)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+  
+![Logo](https://github.com/karthick3018/blogs-helper/blob/main/public/img/icon-128.png)
+
+    
