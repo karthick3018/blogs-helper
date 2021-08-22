@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "version": "0.0.1",
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "description": "Sample application showing how to create an extension with Create React App",
+  "short_name": "Blogs helper",
+  "name": "Blogs helper extension",
+  "description": "Blogs helper extension to read blogs wisely",
   "browser_action": {},
   "web_accessible_resources": ["popup.html"],
   "background": {
