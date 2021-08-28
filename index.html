@@ -1,13 +1,7 @@
----
-layout: page
-title: String TITLE OF THE WEBPAGE
-permalink: / String / PERMALINK FOR THE WEBPAGE
-tagline: String OPTIONAL GRAVITY FEATURE : TAGLINE FOR THE PAGE
----
-
----
-layout: page
-title: "Science"
-permalink: /science/
-tagline: "Humanity is overrated."
----
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
