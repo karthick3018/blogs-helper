@@ -62,7 +62,7 @@ Start the server
 ```
 Unpack in browser
 ```Unpack in browser
-Go to manage extension in chrome -> Click on Load unpacked Option and select the dev folder inside the project
+Go to manage extension in chrome -> Enable the developer mode ->  Click on Load unpacked Option and select the dev folder inside the project
 ```
 
 
