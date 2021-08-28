@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
+baseurl: ""
+url: "https://karthick3018.github.io/blogs-helper/"
 github:
   zip_url: https://github.com/karthick3018/blogs-helper/blob/main/blogs-helper.zip
