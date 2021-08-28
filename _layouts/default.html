@@ -20,7 +20,6 @@
       <section id="downloads">
         {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
         {% endif %}
         <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
       </section>
@@ -29,7 +28,27 @@
 
   <div class="container">
     <section id="main_content">
-      {{ content }}
+    <h2> What Blogs helper solves ?</h2>
+    
+    The Problem statement I took was simple and weird , not sure how many of them faced it but to be honest I faced a lot.
+    
+    While reading the technical blogs there will be a code snipet at the starting of the blog which will be referenced
+    and explained till the bottom of the blogs. As we go on scrolling the page the actual code snipet which is referenced
+    will be hidden in the viewport.
+    
+    Now while reading the explanation I've forgot the actual code snipet.
+    
+    <i>What is this blog explaining 🤔</i>
+    
+    So to overcome that I've used multiple window one for the code snipet and other one is for the explanation . This is not
+    the perfect way right ? Why not stickys ? Not sure how to use without minimizing the browser. So to overcome that I've
+    made Blogs helper.
+
+    <h3> Features</h3>
+    
+    * It will stick to the right side of the window . Since most of the sites have blank space at the right.
+    * It can resize to a particular width & height.
+    * It can be dragged and moved around the particular right side area.
     </section>
   </div>
 </body>
