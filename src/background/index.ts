@@ -9,8 +9,8 @@ export function messageInBackground() {
   console.log('I can run your javascript like any other code in your project');
   console.log('just do not forget, I cannot render anything !');
 
-chrome.browserAction.onClicked.addListener(function(tab:any){
-    chrome.tabs.sendMessage(tab.id,"toggle");
+chrome.browserAction.onClicked.addListener(function(tab: chrome.tabs.Tab) {
+    chrome.tabs.sendMessage(tab.id ?? 0,"toggle");
 });
 
 }
