@@ -25,9 +25,6 @@ React , Typescript
 * It can resize to a particular width & height.
 * It can be dragged and moved around the particular right side area.
   
-## Download
-You can download the extension here !
-<a href="https://github.com/karthick3018/blogs-helper/blob/main/blogs-helper.zip" target="_blank">Download</a>
 ## Demo
 
 ![gif](https://github.com/karthick3018/blogs-helper/blob/main/public/img/output.gif)
